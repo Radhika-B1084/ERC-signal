@@ -33,7 +33,9 @@ cleaner_envelope = filtfilt(b_env, a_env, envelope);
 cleanest_envelope = filtfilt(y_env, x_env, cleaner_envelope);
 ```
 A 6th-order low-pass filter with a cutoff of 2.2 kHz is applied to smoooth the envelope. Similarly a 3rd-order high-pass filter with a 100 Hz cutoff is applied to remove any DC or low-frequency drift. I then normalise and plot the curves and play the audio of the "cleanest_envelop". I tried different values, but these apramters are the ones giving the cleanest audio. 
-![image](https://github.com/user-attachments/assets/3050b9f2-a1ba-4ae0-9572-f956952ae48b)
-Shows the original singal, envelope, cleaner_envelope and cleanest_envelope. 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3050b9f2-a1ba-4ae0-9572-f956952ae48b" width="400">
+</p>
+^Shows the original singal, envelope, cleaner_envelope and cleanest_envelope
 
 
